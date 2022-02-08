@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GYM Landing Page</title>
+
+    <!-- Style stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e1e0720711.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <section class="showcase">
+      <!-- Our Header -->
+      <header>
+        <h2 class="logo">GYM</h2>
+        <div class="toggle">
+        <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <!-- Our Video -->
+        <video autoplay muted loop>
+          <source src="Images/gymCoverVideo.mp4" type="video/mp4">
+        </video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Living Healthy</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Plans</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () =>{
+          menuToggle.classList.toggle('active')
+          showcase.classList.toggle('active')
+        })
+    </script>
+
+  </body>
+</html>
